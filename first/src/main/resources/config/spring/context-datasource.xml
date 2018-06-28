@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-3.0.xsd http://www.springframework.org/schema/jdbc http://www.springframework.org/schema/jdbc/spring-jdbc-3.0.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.springframework.org/schema/beans">
+
+
+<bean destroy-method="close" class="org.apache.commons.dbcp.BasicDataSource" id="dataSource">
+<property value="oracle.jdbc.driver.OracleDriver" name="driverClassName"/>
+<property value="jdbc:oracle:thin:@localhost:1521:XE" name="url"/>
+<property  name="username" value="shop"/>
+<property name="password" value="111111" />
+</bean>
+</beans>

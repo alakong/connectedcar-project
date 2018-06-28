@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE configuration
+PUBLIC "-//mybatis.org/DTD Config 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-config.dtd">
+<configuration>
+	<typeAliases>
+		<typeAlias type="first.common.vo.Danger" alias="danger"/>
+		<typeAlias type="first.common.vo.Member" alias="member"/>
+		<typeAlias type="first.common.vo.CarInfo" alias="carinfo"/>
+		<typeAlias type="first.common.vo.Member_Car" alias="member_car"/>
+		<typeAlias type="first.common.vo.CarState" alias="carstate"/>
+		<typeAlias type="first.common.vo.Area" alias="area"/>
+		
+			
+	</typeAliases>
+	
+</configuration>
+
+
+
+
+
+

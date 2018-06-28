@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+PUBLIC "-//mybatis.org/DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+
+
+<mapper namespace="manage">
+
+	<select id="select" parameterType="String" 
+	resultType="carstate">
+		SELECT * FROM CARSTATE WHERE CARID=#{id}
+	</select>
+	
+	<select id="selectall" resultType="carstate">
+		SELECT * FROM CARSTATE
+	</select>
+	
+	<insert id="insert" parameterType="carstate">
+		INSERT INTO CARSTATE VALUES (#{carId},#{lat},#{longi})
+	</insert>
+	
+ 	<update id="update" parameterType="carstate">
+		UPDATE CARSTATE SET LAT=#{lat},LONGI=#{longi},ACCEL=#{accel},ENGTEMP=#{engTemp},CARTEMP=#{carTemp},GAS=#{gas} ,TIRE=40,REGDATE=sysdate WHERE CARID=#{carId}
+	</update> 
+	
+	<delete id="delete" parameterType="java.lang.Integer">
+		DELETE FROM DANGER WHERE ID=#{id}
+	</delete>
+	
+</mapper>
+
+
+
+
+
+

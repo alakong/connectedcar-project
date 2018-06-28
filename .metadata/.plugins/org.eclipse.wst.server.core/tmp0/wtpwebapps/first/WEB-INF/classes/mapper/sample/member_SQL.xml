@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+PUBLIC "-//mybatis.org/DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+
+
+<mapper namespace="member">
+
+	<select id="select" parameterType="String" 
+	resultType="String">
+		SELECT PWD FROM MEMBER WHERE ID = #{id}
+	</select>
+	
+	<select id="selectid" parameterType="member_car" 
+	resultType="String">
+		SELECT ID FROM MEMBER_CAR WHERE (CARID = #{carId} AND ID=#{id})
+	</select>
+	
+	<select id="selectall" resultType="member_car">
+		SELECT * FROM MEMBER_CAR
+	</select>
+	
+	
+	<!-- 회원가입시 정보 테이블에 입력 -->
+	<insert id="insertm" parameterType="member">
+		INSERT INTO MEMBER VALUES (#{id},#{pwd})
+	</insert>
+	
+    <insert id="insertc" parameterType="carinfo">
+		INSERT INTO CARINFO VALUES (#{carId, jdbcType=VARCHAR})
+	</insert>
+	
+    <insert id="insertmc" parameterType="member_car">
+		INSERT INTO MEMBER_CAR VALUES (#{carId,jdbcType=VARCHAR},#{id})
+	</insert>
+	
+ 	 <insert id="inserts" parameterType="carstate">
+		INSERT INTO CARSTATE VALUES (#{carId},null,null)
+	</insert>
+	
+	
+	
+	
+ 	<update id="update" parameterType="carstate">
+		UPDATE CARSTATE SET LAT=#{lat},LONGI=#{LONGI},dLEVEL=#{dLEVEL} WHERE CARID=#{carid}
+	</update> 
+	
+	<delete id="delete" parameterType="java.lang.Integer">
+		DELETE FROM DANGER WHERE ID=#{id}
+	</delete> 
+	
+</mapper>
+
+
+
+
+
+

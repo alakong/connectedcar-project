@@ -1,0 +1,30 @@
+1526879068216	Copy package
+1526879448792	Delete element
+1526880568005	Copy package
+1526880967246	Rename type 'ProductMapper'
+1526881015400	Rename resource 'productmapper.xml'
+1526882510513	Copy compilation unit
+1526882514067	Delete element
+1526882713423	Rename type 'ProductBiz'
+1526882733125	Rename type 'ProductDao'
+1526885846397	Move 'dangermapper.xml' to 'mapper'
+1526887535174	Move 'dangermapper.xml' to 'sample'
+1526887555164	Rename resource 'dangermapper.xml'
+1526889562964	Delete element
+1526889571354	Delete element
+1527062802652	Rename resource 'Sample_SQL.xml'
+1527062822193	Copy file
+1527063433598	Rename type 'CarInfo'
+1527064173772	Copy compilation unit
+1527064194050	Rename type 'DangerBiz2'
+1527064210276	Copy compilation unit
+1527064884261	Copy compilation unit
+1527070709242	Rename type 'Biz2'
+1527070740811	Rename type 'LoginBiz'
+1527070771595	Copy compilation unit
+1527070803702	Rename package 'first.common.frame'
+1527070884058	Rename package 'first.common.danger'
+1527071375365	Delete element
+1527122903332	Copy compilation unit
+1527123028896	Copy file
+1527123177245	Copy file
